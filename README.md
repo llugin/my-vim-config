@@ -1,10 +1,15 @@
 # my-vim-config
 
-used plugins:
+## Used plugins ##
+
 https://github.com/Rip-Rip/clang_complete
+
 https://github.com/scrooloose/nerdtree
+
 https://github.com/tpope/vim-pathogen
 
-dependencies:
+## Dependencies ##
+
 exuberant-ctags
+
 csope
