@@ -22,4 +22,4 @@ then
 fi
 
 echo "Copying .vimrc..."
-cp .vimrc ~/.vimrc
+cp $(dirname "$0")/.vimrc ~/.vimrc
