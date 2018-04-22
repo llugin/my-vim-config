@@ -60,3 +60,6 @@ map <leader>tm :tabmove
 	nmap <C-_>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 	nmap <C-_>a :cs find a <C-R>=expand("<cword>")<CR><CR>
 
+" Abbreviations
+ab szebang #!/usr/bin/env bash
+ab pyszebang #!/usr/bin/env python3
