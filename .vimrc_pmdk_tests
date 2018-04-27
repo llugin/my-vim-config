@@ -1,3 +1,6 @@
 let g:clang_auto_user_options='compile_commands.json'
 let g:clang_compilation_database='./build'
-let g:syntastic_cpp_remove_include_errors=1
+"let g:syntastic_cpp_remove_include_errors=1
+let g:syntastic_cpp_include_dirs = ['src/utils', 'src/tests/ras/utils',
+\'build/ext/gtest/src/gtest/googletest/include',
+\'build/ext/pugixml/src/pugixml/src']
