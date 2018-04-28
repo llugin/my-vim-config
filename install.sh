@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+
+START_DIR=`pwd`
+
 echo "Installing Pathogen..."
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
@@ -18,11 +21,19 @@ cp -R * ..
 cd ..
 make
 
+cd $START_DIR
+
+echo "installing cpp-enhanced highlihgt"
+git clone https://github.com/octol/vim-cpp-enhanced-highlight.git ~/.vim/bundle/syntax
+
+echo "installing syntastic"
+git clone https://github.com/vim-syntastic/syntastic.git ~/.vim/bundle/syntastic
+
 test -f ~/.vimrc
 if [ $? == 0 ]
 then
     echo "Backing up existing ~/.vimrc to .vimrc.bak..."
-    cp ~/.vimrc .vimrc.bak
+    cp ~/.vimrc ~/.vimrc.bak
 fi
 
 echo "Copying .vimrc..."
