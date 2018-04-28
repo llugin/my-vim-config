@@ -4,3 +4,9 @@ let g:clang_compilation_database='./build'
 let g:syntastic_cpp_include_dirs = ['src/utils', 'src/tests/ras/utils',
 \'build/ext/gtest/src/gtest/googletest/include',
 \'build/ext/pugixml/src/pugixml/src']
+
+" set path for gf
+set path+=build/ext/gtest/src/gtest/googletest/include
+set path+=src/tests/ras/utils
+set path+=build/ext/pugixml/src/pugixml/src
+set path+=src/utils
